@@ -1,0 +1,88 @@
+
+body{
+    background-image: url("İmages/black-coffee-1185883s.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.Esas-div{
+    margin-left: 650px;
+
+
+}
+
+.Clock-div{
+    margin: 100px;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    border: 5px solid cadetblue;
+    position: absolute;
+    /* saat içini tapıb əlavə edəcəm
+    background-image: url("İmages/saatpngssss.jpg");*/
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.center-div{
+    margin: 285px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 5px solid cadetblue;
+    background: cadetblue;
+    position: absolute;
+}
+
+.BigScorpion-div{
+    margin: 298px;
+    height: 5px;
+    width: 185px;
+    border-radius: 100px 100px 100px 100px;
+    border: 3px solid cadetblue;
+    background: cadetblue;
+    position: absolute;
+    transform-origin: 0% 50%;
+    animation: rotate 360s linear infinite;
+    transform: rotate(272deg);
+
+}
+
+.SecondsScorpion-div{
+    margin: 298px;
+    height: 5px;
+    width: 165px;
+    border-radius: 100px 100px 100px 100px;
+    border: 3px solid cadetblue;
+    background: cadetblue;
+    position: absolute;
+    transform-origin: 0% 50%;
+    animation: rotate 1s linear infinite;
+    transform: rotate(272deg);
+
+}
+
+.SmallScorpion-div{
+    margin: 298px;
+    height: 5px;
+    width: 110px;
+    border-radius: 100px 100px 100px 100px;
+    border: 3px solid cadetblue;
+    background: cadetblue;
+    position: absolute;
+    transform-origin: 0% 50% ;
+    transform: rotate(272deg);
+    animation: rotate 60s linear infinite;
+
+
+ }
+
+
+
+@keyframes rotate {
+    0% {
+        transform: rotate(272deg);
+    }
+    100% {
+        transform: rotate(632deg);
+    }
+}
