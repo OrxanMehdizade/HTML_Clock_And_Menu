@@ -7,81 +7,68 @@ body{margin: 0}
 
     margin:0;
     background: cadetblue;
-    height: 57rem;
-    width: 250px;
     position: absolute;
-    left: -250px;
-    transition: left 1s ease 0s;
-    & h3{
-        margin-left: 15px;
+    width: 48px;
+    height: 990px;
+    transition: width 2s;
+    transition-timing-function: linear;
+
+    & h5{
+        margin-left: 8px;
+        font-size: 12px;
     }
 
-    & .EDIT-div{
-        margin:10px ;
-        & img{
-            float: left;
-        }
-        & div{
-            margin-left: 25px;
-        }
-    }
-    & .FAVRITES-div{
-        margin:10px ;
-        & img{
-            float: left;
-        }
-        & div{
-            margin-left: 25px;
-        }
-    }
-    & .HISTORY-div{
-        margin:10px ;
-        & img{
-            float: left;
-        }
-        & div{
-            margin-left: 25px;
-        }
-
+    & ol li{
+        padding: 10px;
 
     }
-    & .SECURITY-div{
-        margin:10px ;
-        & img{
-            float: left;
+    & .EDIT-li{
+        list-style-image: url("İmages/edit.png");
+        & p{
+            display: none;
         }
-        & div{
-            margin-left: 25px;
+    }
+    & .FAVRITES-li{
+        list-style-image: url("İmages/favorite.png");
+        & p{
+            display: none;
+        }
+    }
+    & .HISTORY-li{
+        list-style-image: url("İmages/history.png");
+        & p{
+            display: none;
         }
     }
 
-    & .SETTINGS-div{
-        margin:10px ;
-        & img{
-            float: left;
-        }
-        & div{
-            margin-left: 25px;
+    & .SECURITY-li{
+        list-style-image: url("İmages/shield.png");
+        & p{
+            display: none;
         }
     }
+
+    & .SETTINGS-li{
+        list-style-image: url("İmages/settings.png");
+        & p{
+            display: none;
+        }
+    }
+
+
+
 
 }
 
-.menu-div::after{
-    content: "MENU";
-    background-color: brown;
-    text-align: center;
-    border-radius: 0 0 8px 8px;
-    padding: 5px 0;
-    position: absolute;
-    left: 260px;
-    top: 205px;
-    width: 200px;
-    transform: rotate(-90deg);
-    transform-origin: 0 ;
-}
+
+
 
 .menu-div:hover{
-    left: 0;
+    width: 200px;
+    & p{
+        display: unset;
+    }
+
+
 
 }
